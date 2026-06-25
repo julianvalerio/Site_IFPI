@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IFPI - Matrícula</title>
+    <link rel="stylesheet" href="ifpi.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li class="dropdown">
+                <a class="dropbtn">Cursos</a>
+                <div class="dropdown-content">
+                    <a href="#">Informática</a>
+                    <a href="#">Administração</a>
+                    <a href="#">Agropecuária</a>
+                </div>
+            </li>
+            <li><a href="#home">Como Ingressar</a></li>
+            <li><a href="matricula.html">Efetuar Matrícula</a></li>
+        </ul>
+    </header>
+    <main>
+        <div class="container">
+            <div class="left">
+                <form>
+                    <fieldset>
+                        <legend>Matrícula de Alunos</legend>
+                        <p>
+                            <label for="name">
+                                Nome:
+                                <input type="text" id="name" placeholder="Digite seu nome" required>
+                            </label>
+                        </p>
+                        <p>
+                            <label for="email">
+                                E-mail:
+                                <input type="email" id="email" required>
+                            </label>
+                        </p>
+                        <p>
+                            <label for="myDate">
+                                Data de Nascimento:
+                                <input type="date"
+                                        name="myDate"
+                                        min="2000-01-01"
+                                        max="2025-01-01"
+                                        id="myDate"
+                                        required>
+                            </label>
+                        </p>
+                        <p>
+                            <label for="pwd">
+                                Senha:
+                                <input type="password"
+                                        id="pwd"
+                                        name="password"
+                                        required>
+                            </label>
+                        </p>
+                        <p>
+                            <input type="button" class="button_active"
+                                    value="Confirmar"
+                                    onclick="location.href='index.html';">
+                        </p>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="right">
+                <img src="logo-ifpi.png" alt="Logotipo do IFPI">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="left">
+                <div>
+                    <h3>Endereço:</h3>
+                    <p>IFPI - Paulistana</p>
+                    <p>Rodovia BR 407, km 5, s/n</p>
+                    <p>Paulistana - PI, 64750-000</p>
+                </div>
+            </div>
+            <div class="sitemap">
+                <h3>Mapa do Site</h3>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="#">Cursos</a></li>
+                    <li><a href="#">Como Ingressar</a></li>
+                    <li><a href="matricula.html">Matrícula</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
