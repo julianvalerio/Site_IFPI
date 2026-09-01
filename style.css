@@ -1,0 +1,170 @@
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #2e7d32; /* verde institucional, mais suave que "green" puro */
+    color: #222;
+}
+
+header, main, footer {
+    min-width: 855px;
+}
+header .container,
+main .container,
+footer .container {
+    max-width: 855px;
+    margin: auto;
+}
+
+
+header {
+    background: white;
+    overflow: auto;
+    border-bottom: 3px solid #2e7d32;
+}
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+header li {
+    float: right;
+}
+header li a,
+header .dropbtn {
+    display: inline-block;
+    color: #222;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+header li a:hover,
+header .dropdown:hover .dropbtn {
+    background-color: #2e7d32;
+    color: white;
+}
+header li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: #2e7d32;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+main {
+    background: white;
+    overflow: auto;
+    padding: 20px 0;
+}
+main .left {
+    float: left;
+    width: 570px;
+}
+main .right {
+    float: right;
+    width: 285px;
+}
+main h2 {
+    color: #2e7d32;
+}
+
+
+main img {
+    width: 250px;
+    height: 250px;
+    object-fit: contain; /* mantém a proporção da imagem sem distorcer */
+    display: block;
+    margin: 0 auto;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    padding: 16px;
+}
+legend {
+    font-weight: bold;
+    color: #2e7d32;
+}
+form label {
+    display: block;
+    margin-top: 10px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="date"],
+form input[type="password"] {
+    width: 100%;
+    padding: 6px;
+    margin-top: 4px;
+    box-sizing: border-box;
+}
+.button_active {
+    margin-top: 16px;
+    padding: 8px 20px;
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.button_active:hover {
+    background-color: #1b5e20;
+}
+
+footer {
+    background: white;
+    overflow: auto;
+    border-top: 3px solid #2e7d32;
+    padding: 10px 0;
+}
+footer .left {
+    float: left;
+    width: 285px;
+}
+footer .sitemap {
+    float: right;
+    width: 285px;
+}
+footer h3 {
+    color: #2e7d32;
+}
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li {
+    float: none;
+}
+
+footer ul li a {
+    color: #222;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
